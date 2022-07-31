@@ -15,13 +15,14 @@ We have built an application that can:- <br>
  - There might be some vulnerabilities that may be False positives and We can manually mark those vulnerabilites as false positives or remove them from the detected vulnerabilities. <br>
  
 ## 👩🏻‍💻 Tech Stack
- - HTML/CSS
- - Bootstrap
- - Javascript
+ - HTML/CSS/Bootstrap
+ - JavaScript
  - Python
  - Flask
  - PostgreSQL
- - Ginger Template 
+ - Semgrep
+ - gunicorn
+
 
 ## 🎬 Getting Started (Linux/Mac)
 <a href="https://adamtheautomator.com/install-postgresql-on-a-ubuntu/">Install Postgres</a> and configure `SQLALCHEMY_DATABASE_URI` in `SecLyzer/settings.py`.<br>Format `postgresql://<User>:<Password>@127.0.0.1/<Database_Name>`
@@ -34,6 +35,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python3 global_functions.py initialize-db # Run once to generate database schema
+chmod +rwx ./run.sh
 ```
 
 ##### To run SecLyzer
