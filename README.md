@@ -32,7 +32,7 @@ git clone https://github.com/parikshit3000/SecLyzer.git
 cd SecLyzer
 python3 -m venv venv
 source venv/bin/activate
-pip install -r packages.txt
+pip install -r requirements.txt
 python3 global_functions.py initialize-db # Run once to generate database schema
 ```
 
